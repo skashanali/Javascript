@@ -1,0 +1,42 @@
+.main{ 
+margin: auto;
+width: 70%;
+padding-right: 40px;
+padding-left: 40px;
+}
+
+body{
+    color: black;
+}
+
+#quiz_body,#end{
+    display: none;
+}
+
+button {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 6px 25px 6px 25px;
+    background: transparent;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+#start,#quiz_body,#end{
+    margin-top: 5em;
+    margin-bottom: 4em;
+}
+
+#quiz{
+    font-size: 17px;
+    font-weight: 550;
+}
+
+.ul{
+    text-decoration: underline;
+}
+
+h1{
+    font-size: 4em;
+}
+

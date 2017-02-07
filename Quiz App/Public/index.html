@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    
+    <div class="panel-heading bg-success">        
+            <h1 class="text-center">Quiz Application</h1> 
+    </div>
+    
+    <div class="main">
+
+        <div id="start">
+            <h3 class="text-center ul">Information About the Quiz</h3>
+            <h4>This quiz contains 10 questions which you have to complete in 2 minutes time period.</h4>
+            <h4>You will get 10 marks for each correct answer. At the end of the Quiz, your total score will be displayed. Maximum score is 100 marks.</h4>
+            <h4>Good Luck!</h4>
+            <center>
+                <button onclick="timer(2);startQuiz()">Start Quiz</button>
+            </center>
+        </div>
+
+        <div id="quiz_body">    
+            <div id="quiz">
+                <h5><span id="counter"></span> <span id="timer" class="pull-right"></span></h5>
+                <h3 id="question"></h3>
+                <input type="radio" name="option" id="opt1"> <br><br>
+                <input type="radio" name="option" id="opt2"> <br><br>
+                <input type="radio" name="option" id="opt3"> <br><br>
+                <button onclick="next()" id="submit">Next</button>
+            </div>
+    
+            <div id="end">
+                <div class="text-center">
+                    <h3 id="result"></h3>
+                    <h3 id="score"></h3>
+                    <h3 id="correctanswers"></h3>
+                    <button onclick="history.go(0)">Retake Quiz</button>    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="panel-footer navbar-fixed-bottom">
+        &copy; Copyrights: Syed Kashan Ali 
+        <a href="mailto:kashanali592@gmail.com" target="_blank" class="pull-right">Kindly give me your feedback.</a>
+    </div>
+
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
